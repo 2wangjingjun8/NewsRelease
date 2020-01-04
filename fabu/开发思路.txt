@@ -1,0 +1,55 @@
+1、制作新闻模板 
+
+
+2、提交新闻表单
+	类别 type
+	标题 title
+	描述 desc
+	时间 createtime
+	图片 picture
+	内容 content
+
+3、生成新闻详情：秘奥新闻、行业新闻
+
+	1.秘奥新闻
+		--秘奥新闻详情 news/8/*.html
+		--秘奥新闻列表 news/3/90.html
+	2.行业新闻
+		--行业新闻详情 news/88/*.html
+		--行业新闻列表 news/3/89.html
+
+
+4、利用新闻模板生成新闻html文件
+
+5、修改首页最新新闻内容数据 index.html
+
+
+第一次生成前要配置一下生成的最大数字文件名
+
+配置文件路径/8/maxNum.txt：记录目录\News\8\最大的文件名数字 
+配置文件路径/88/maxNum.txt：记录目录\News\88\最大的文件名数字 
+
+
+备份实现项目 核心实例代码
+function createHtml(){
+	$content = file_get_contents("index.html");
+
+	// 找到列表前面并新增一条
+	$preContent = '<li class="item">666666666666</li>';
+	// 列表头部标志正则
+	$preg = '#<ul class="newslist">([^"]+?)#';
+	$content = preg_replace($preg,'<ul class="newslist">'.$preContent.'$1',$content);
+
+	// 找到并最后一条
+	$preg = "/<li.*?class=[\'|\"]item[\'|\"]>(.*?)<\/li>/i";
+	preg_match_all($preg,$content,$array);
+	// end() 将内部指针指向数组中的最后一个元素，并输出
+	$content = str_replace(end($array[0]),'',$content);
+
+	print_r($content);
+
+	// 输出生成新的html
+	file_put_contents('index_b.html', $content);
+}
+
+

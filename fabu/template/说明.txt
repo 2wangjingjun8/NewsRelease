@@ -1,0 +1,15 @@
+3新闻列表
+
+8秘奥新闻详情
+模板文件
+秘奥新闻：/8/default.html
+文件名：记录目录\News\8\最大的文件名数字   /8/maxNum.txt
+
+88行业新闻详情
+模板文件：/88/default.html
+文件名：记录目录\News\88\最大的文件名数字  /88/maxNum.txt
+
+back 发布新闻前 页面备份
+	--index.html 首页
+	--90.html 秘奥新闻列表
+	--89.html 行业新闻列表

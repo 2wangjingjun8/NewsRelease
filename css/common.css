@@ -1,0 +1,208 @@
+@charset "utf-8";
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, q, dl, dt, dd, ol, ul, li, fieldset, form, legend, caption, tbody, tfoot, thead, article, aside, dialog, figure, footer, header, hgroup, nav, section{
+	margin: 0px;
+	padding: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:14px;
+	 font-weight:normal;
+	}
+ul, li, dl, dt, dd, ol {
+	list-style: none;
+}
+img {
+	border: 0;
+	padding: 0;
+	vertical-align:middle;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+a:hover{
+	color:#0099C5;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size:14px;
+	background-color:#FFFFFF;
+	color:#333;
+	font-family:"Microsoft Yahei";
+}
+.mybody{
+	clear: both;
+	float: none;
+	width:1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.fl{float:left;}
+.fr{float:right;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt70{margin-top: 70px;}
+.mt80{margin-top: 80px;}
+.pr10{padding-right: 10px;}
+.pr20{padding-right: 20px;}
+.pt20{padding-top: 20px;}
+.pt50{padding-top: 50px;}
+.pb60{padding-bottom: 60px;}
+.hidden{
+	overflow: hidden;
+}
+/*清除浮动*/
+.clearfix:after{content:" ";clear:both;height:0;visibility:hidden;display:block;}
+.clearfix{*zoom:1;}
+/*---首页头部----*/
+.header{
+	width: 100%;
+}
+.header .logo{
+	float: left;
+	display: block;
+	width: 270px;
+	padding: 30px 0px 25px;
+}
+.head-top .ltext{
+	float: left;
+	padding:38px 0px 0px 12px;
+}
+.head-top .ltext b{
+	font-size:17px;
+	font-weight: bold;
+	color: #0099C5;
+	display: block;
+}
+.head-top .ltext p{
+	background:#0099C5;
+	color: #fff;
+	display: inline-block;
+	padding: 0px 8px;
+	margin-top: 3px;
+}
+.head-top .language{
+	text-align: right;
+	margin-top: 15px;
+}
+.head-top .language span{
+	padding: 0px 3px;
+}
+.head-top .language a:hover{
+	text-decoration: underline;
+}
+.header .head-tel{
+	padding-top:5px;
+	overflow: hidden;
+}
+.head-tel .emico{
+	float: left;
+	width: 28px;
+	height: 28px;
+	display: block;
+	margin-top:10px;
+}
+.head-tel .emico img{
+	width: 28px;
+	height: 28px;
+}
+.head-tel .telbox{
+	float: left;
+	line-height: 25px;
+	margin-left: 10px;
+}
+.head-tel .telbox em{
+	font-style: normal;
+	color: #0099C5;
+}
+.head-tel .telbox span{
+	padding-right: 5px;
+}
+.header .headbox{
+	background:#0685BF;
+}
+#topNav {
+    width: 100%;
+    z-index: 1001;
+}
+.header .head-nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+.head-nav .drop-menu-effect{
+	float: left;
+	height: 50px;
+	position: relative;
+}
+.head-nav .tit{
+	display: block;
+	min-width:115px;
+	margin: 0px 9px;
+	height: 50px;
+	text-align: center;
+	line-height:50px;
+	font-size: 15px;
+	color: #fff;
+}
+.head-nav li .submenu{
+	position: absolute;
+	top:50px;
+	width:180px;
+	background: #fff;
+	left:9px;
+	padding: 5px 0px 10px;
+	z-index: 99;
+	border-radius: 0px 0px 3px 3px;
+    box-shadow: 0 1px 12px 0 rgba(0,0,0,.2);
+	display: none;
+}
+.head-nav li .submenu a{
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.head-nav li .submenu a:hover{
+	background: #0685BF;
+	color: #fff;
+}
+.head-nav li.cur .tit{
+	background:#FAA81A;
+	color: #fff;
+}
+.head-nav .hover_menu .tit{
+	background:#FAA81A;
+	color:#fff;
+}
+.head-nav .hover_menu .tit02{
+	background:#FAA81A;
+	color:#fff;
+}
+.head-nav li.cur .tit02{
+	background:#FAA81A;
+	color: #fff;
+}
+.head-nav .tit02{
+	display: block;
+	min-width: 170px;
+	margin: 0px 9px;
+	height: 50px;
+	text-align: center;
+	line-height:50px;
+	font-size: 16px;
+	color: #fff;
+}
+.footer{
+	background: #333;
+	padding: 50px 0px;
+}
+.footer span{
+	padding-left: 15px;
+}
+.foot-main{
+	width:1200px;
+	margin: 0 auto;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+}
